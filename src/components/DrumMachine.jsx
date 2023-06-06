@@ -102,7 +102,7 @@ const DrumMachine = () => {
         {C.map((element, index) => (
           <div
             key={index}
-            className={`bg-black drum-pad h-20 w-20 duration-700 flex align-middle ${
+            className={`bg-black drum-pad h-20 w-20 duration-700 flex align-middle select-none ${
               highlightedIndex === index ? "shadow-2xl shadow-indigo-500/50" : ""
             }`}
             onClick={() => handlePadClick(index)}
