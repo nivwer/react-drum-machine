@@ -86,7 +86,7 @@ const DrumMachine = () => {
 
   return (
     <div
-      className="bg-black shadow-2xl shadow-indigo-500/50 text-center text-slate-400 mx-auto p-4 max-w-sm sm:grid sm:grid-cols-4"
+      className="bg-black shadow-2xl shadow-gray-500/50 text-center text-gray-400 mx-auto p-4 max-w-sm sm:grid sm:grid-cols-4"
       id="drum-machine"
     >
       <Switch onChange={handleSwitchChange} defaultChecked/>
@@ -103,7 +103,7 @@ const DrumMachine = () => {
           <div
             key={index}
             className={`bg-black drum-pad h-20 w-20 duration-700 flex align-middle select-none ${
-              highlightedIndex === index ? "shadow-2xl shadow-indigo-500/50" : ""
+              highlightedIndex === index ? "shadow-2xl shadow-gray-500/50" : ""
             }`}
             onClick={() => handlePadClick(index)}
           >
